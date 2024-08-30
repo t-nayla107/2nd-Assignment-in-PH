@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@
 
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #fff;
 }
 p {
@@ -25,15 +27,21 @@ h2 {
     color: tomato;
     font-weight: 600;
 }
+h3 {
+    font-size: 2rem;
+    color: #fff;
+}
 .btn1 {
-    padding: 5px 20px;
+    margin: 10px 5px;
+    padding: 5px 25px;
     border: 2px solid tomato;
     color: #fff;
     background-color: tomato;
     border-radius: 15px;
 }
 .btn2 {
-    padding: 5px 20px;
+    margin: 10px 5px;
+    padding: 5px 25px;
     border: 2px solid #fff;
     color: #fff;
     background: transparent;
@@ -62,3 +70,105 @@ nav {
     font-size: 1rem;
     color: #fff;
 }
+
+.content {
+    padding: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20%;
+}
+.content h1 {
+    padding: 3% 0;
+}
+.content p {
+    padding: 5% 0;
+}
+
+
+.Image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Image-card {
+    border: 2px solid rgb(72, 72, 72);
+    border-radius: 5px;
+    padding: 10px;
+}
+.one {
+    grid-row: 5;
+    grid-column: 1/5;
+    height: auto;
+    width: 100%;
+}
+.three {
+    grid-row: 1/5;
+    grid-column: 5;
+    height: 18%;
+    width: 100%;
+}
+.one ,.three{
+    grid-column: 1;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+
+.second-content {
+    background-color: black;
+    padding: 5% 0;
+}
+.second-content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+}
+.second-content p {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.four-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 10%;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.items h4 {
+    font-size: 1rem;
+    color: #fff;
+}
+.items img {
+    border-radius: 100px;
+    padding: 15px 20px;
+}
+.items p {
+    font-size: 1rem;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(53, 53, 53);
+    margin: 5% 10%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.cart h1 {
+    font-size: 1.5rem;
+    padding-left: 3%;
+}
+.cart p {
+    text-align: left;
+}
+.cart-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
