@@ -1,7 +1,64 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.page {
-    background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+.container {
+    padding: 5% 8%;
+    /* background: linear-gradient(180deg, #111111 0%, #111111 50%, rgba(119, 119, 119, 0) 100%); */
+    background-color: rgb(44, 43, 43);
+}
+.hero {
+
+}
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+p {
+    font-size: large;
+    color: rgb(94, 93, 93);
+}
+h2 {
+    font-size: 2rem;
+    font-style: italic;
+    color: tomato;
+    font-weight: 600;
+}
+.btn1 {
+    padding: 5px 20px;
+    border: 2px solid tomato;
+    color: #fff;
+    background-color: tomato;
+    border-radius: 15px;
+}
+.btn2 {
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    border-radius: 15px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid rgb(72, 72, 72);
+    border-radius: 25px;
+    place-items: center;
+}
+.home {
+    background-color: tomato;
+    color: #fff;
+    border: 2px solid tomato;
+    border-radius: 15px;
+    padding: 3px 25px;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
 }
