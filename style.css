@@ -10,9 +10,6 @@
     /* background: linear-gradient(180deg, #111111 0%, #111111 50%, rgba(119, 119, 119, 0) 100%); */
     background-color: rgb(44, 43, 43);
 }
-.hero {
-
-}
 h1 {
     font-size: 4rem;
     color: #fff;
@@ -192,7 +189,7 @@ nav {
 .bmi-content {
     text-align: center;
 }
-table,th,td {
+.bmi table,th,td {
     border: 1px solid #909090;
     border-collapse: collapse;
     padding: 5%;
@@ -202,7 +199,7 @@ table,th,td {
     text-align: left;
     font-size: 1rem;
 }
-th {
+.bmi th {
     color: #fff;
 }
 .bmi-form {
@@ -298,4 +295,90 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #909090;
+}
+.card-one {
+    background-color: tomato;
+    padding: 5% 13%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.card-one img {
+    width: 100%;
+    border-radius: 70px;
+    box-shadow: 20px 20px 30px #222222;
+}
+.price-img{
+    padding-top: 14%;
+}
+.card-one-content h2{
+    color: black;
+    padding-bottom: 3%;
+}
+.card-one-content table,td {
+    color: #fff;
+    border-collapse: separate;
+}
+.card-one-content td {
+    background-color: black;
+    border-radius: 25px;
+}
+
+@media(max-width:992px){
+    .content {
+        padding: 5% 0;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20%;
+    }
+    .Image {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .four-items {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 0 10%;
+    }
+    .cart {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        background-color: #222222;
+        margin: 5% 10%;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .bmi {
+        background-color: #222222;
+        padding: 5% 15%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #height, #weight, #age, #sex {
+        width: 70%;
+        position: relative;
+    }
+    #activity {
+        width: 70%;
+    }
+    .trainer-info {
+        margin: 3%;
+        padding: 5%;
+        background-color: #222222;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        border-radius: 15px;
+    }
+    .card-one {
+        background-color: tomato;
+        padding: 5% 13%;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+    .footer {
+        padding: 3% 5%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10%;
+        border-bottom: 1px solid #909090;
+    }
 }
